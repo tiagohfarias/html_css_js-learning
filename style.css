@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    gap: 12px;
+}
+
+.container {
+    max-width: 90%;
+    width: 400px;
+    line-height: 1.4;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+.loading__author {
+    font-weight: normal; 
+    font-size: 0.9rem;
+    color: rgba(189,189,189 ,1);
+    margin: 0.6rem 0.2rem 2rem 0;
+    display: block;
+}
+
+img {
+    height: 5rem;
+    width: 5rem;
+}
+
+.loading__anim {
+    width: 35px;
+    height: 35px;
+    display: block;
+    border: 5px solid rgba(189,189,189 ,0.25);
+    border-bottom-color: rgba(3,155,229, 1);
+    border-right-color: rgba(3,155,229, 1);
+    border-radius: 50%;
+    animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+    to {
+        transform: rotate(1turn);   
+    }
+}
+    
